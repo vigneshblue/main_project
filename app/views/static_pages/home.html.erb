@@ -1,18 +1,31 @@
 <% provide(:title, "Home") %>
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+	<style>
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+</style>
+</head>
 <body>
 <h1>Sri Subramanya College of Engineering and Technology, Palani</h1>
 <h3>Department of Electronics and Communication and Engineering</h3>
 <h4>AN INTELLIGENT SELF  LEARNING SYSTEM FOR HOME AUTOMATION USING IOT
 </h4>
-<p>A Project By</p>
-<li>
-<ul>VIGNESHWARAN S</ul>
-<ul>SUKUMAR K</ul>
-<ul>SATHEESH KUMAR M </ul>
-<ul>SATHAM HUSSIAN A </ul>
-</li>
+<p><u>A Project By</u></p>
+<div style = "margin-bottom: 50px;margin-left: auto; margin-right: auto;width: 18%">
+<ul><li>VIGNESHWARAN S</li>
+<li>SUKUMAR K</li>
+<li>SATHEESH KUMAR M</li>
+<li>SATHAM HUSSIAN A</li>
+</ul>
+</div>
+
+<p>
+<%= link_to "Click Here To Proceed", switch_path, class: "btn btn-lg btn-primary" %></p>
 </body>
 </html>
