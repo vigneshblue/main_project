@@ -3,5 +3,22 @@
 <html>
 <head></head>
 <body>
+<h3>Remote switch controller using IoT technology</h3>
+<br>
+<br><br><br><br><br>
+<section style="text-align: center"><%=image_tag("off.png", alt: "On Off", id:"onoff", onclick:"imageChange()")%></section>
+<script>
+function changeImage()
+{
+	var image = document.getElementById('onoff');
+	if(image.src.match("on.png"))
+	{
+		image.src = "/assets/off-62d112e9cb21f35175869226be1bddf373a0df4f83540936d8e0122333127353.png";
+	}else {
+		image.src = "/assets/on-0e9044ed9e436b9a7867acdde08214cfc7a06467d875db85a264afc23828cf2a.png";
+	}
+}
+</script>
+
 </body>
 </html>
