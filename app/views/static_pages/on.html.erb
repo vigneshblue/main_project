@@ -1,12 +1,19 @@
 <% provide(:title, "On")%>
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+	<script type="text/javascript">
+		document.getElementById("test").onclick = function() {
+    window.open("http://www.hadronsoft.com/project15/setstatus.php?var1=*1", '_blank', 'location=yes,height=1,width=1,scrollbars=no,status=yes');
+
+  }
+	</script>
+</head>
 <body>
 <h3>Remote switch controller using IoT technology</h3>
 <br>
 <br><br><br><br><br>
-<section style="text-align: center"><%= link_to image_tag("on.png", alt: "On",onclick: changeImage(1)), off_path%>
+<section style="text-align: center"><%= link_to image_tag("on.png", alt: "On", id: "test"), off_path%>
 </section>
 
 
