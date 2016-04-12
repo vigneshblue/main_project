@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
   
-  get 'switch' => 'static_pages#switch'
+  get 'off' => 'static_pages#off'
+
+  get 'on' => 'static_pages#on'
 
   get 'about' => 'static_pages#about'
 
