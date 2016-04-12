@@ -1,12 +1,24 @@
 <footer class="footer">
   <small>
-    copyright-2016
+    (copyright-2016)-vignesh
   </small>
   <nav>
     <ul>
-      <li><%= link_to "About",   '#' %></li>
-      <li><%= link_to "Contact", '#' %></li>
-      <li><a href="http://news.railstutorial.org/">News</a></li>
+      <li><%= link_to "About",   about_path %></li>
+      <li><%= link_to "College", 'www.subramanya.org' %></li>
+      
     </ul>
   </nav>
-</footer>
+</footer><% provide(:title, "Switch")%>
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<h3>Remote switch controller using IoT technology</h3>
+<br>
+<br><br><br><br><br>
+<section style="text-align: center"><%=image_tag("off.png", alt: "On Off", class:"onoff", onclick:"imageChange()")%></section>
+
+
+</body>
+</html>
